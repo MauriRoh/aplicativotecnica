@@ -1,0 +1,29 @@
+{% extends "body.html" %}
+
+{% load static %}
+
+{% block head_extra %}
+    <style>
+        img {
+            max-width: 100%;
+            display: block;
+            width: 60%;
+            margin: auto;
+        }
+    </style>
+
+{% endblock %}
+
+
+{% block data_body %}
+
+    <sec class="card-body dashboard-card-body">
+        <img src="{% static 'image/img-dashboard.png' %}" alt="">
+    </sec>
+    <!-- Footer-Buttons -->
+    {% block footer_buttons %}
+
+    {% endblock %}
+    <!-- ./Footer-Buttons -->
+
+{% endblock %}

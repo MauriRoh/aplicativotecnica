@@ -1,0 +1,54 @@
+{% extends 'home.html' %}
+
+{% load static %}
+
+<!-- Body -->
+{% block body %}
+    <body class="hold-transition sidebar-mini sidebar-collapse layout-footer-fixed">
+    <div class="wrapper">
+
+        {% include 'navbar.html' %}
+
+        {% include 'sidebar.html' %}
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+
+            {% include 'contentheader.html' %}
+
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+
+                            <div class="card">
+
+                                {% block data_body %}
+
+                                {% endblock %}
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        {% include 'footer.html' %}
+
+    </div>
+    <!-- JavaScript -->
+    {% block javascript %}
+
+    {% endblock %}
+    <!-- ./JavaScript -->
+    <!-- Mensaje ERROR Permisos -->
+    <script>
+
+    </script>
+    <!-- ./Mensaje ERROR Permisos -->
+    </body>
+{% endblock %}
+<!-- ./Body -->
