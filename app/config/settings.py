@@ -45,8 +45,9 @@ INSTALLED_APPS = [
     'core.apps.CoreConfig',
     # New Libreries
     'widget_tweaks',
-    # My Apps
-    'core.erp',
+    # My APPs
+    'core.homepage',
+    'core.erp'
 ]
 
 MIDDLEWARE = [
