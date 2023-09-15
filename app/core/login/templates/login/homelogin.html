@@ -1,5 +1,5 @@
 {% load static %}
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -17,11 +17,11 @@
     <!-- ./Bootstrap -->
     <!-- AdminLTE3 -->
     {#    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">#}
-    <link rel="stylesheet" href="{% static 'librery/AdminLTE-3.2.0/plugins/fontawesome-free/css/all.min.css' %}">
-    <link rel="stylesheet" href="{% static 'librery/AdminLTE-3.2.0/dist/css/adminlte.min.css' %}">
-    <script src="{% static 'librery/AdminLTE-3.2.0/plugins/jquery/jquery.min.js' %}"></script>
-    <script src="{% static 'librery/AdminLTE-3.2.0/plugins/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-    <script src="{% static 'librery/AdminLTE-3.2.0/dist/js/adminlte.min.js' %}"></script>
+    {#    <link rel="stylesheet" href="{% static 'librery/AdminLTE-3.2.0/plugins/fontawesome-free/css/all.min.css' %}">#}
+    {#    <link rel="stylesheet" href="{% static 'librery/AdminLTE-3.2.0/dist/css/adminlte.min.css' %}">#}
+    {#    <script src="{% static 'librery/AdminLTE-3.2.0/plugins/jquery/jquery.min.js' %}"></script>#}
+    {#    <script src="{% static 'librery/AdminLTE-3.2.0/plugins/bootstrap/js/bootstrap.bundle.min.js' %}"></script>#}
+    {#    <script src="{% static 'librery/AdminLTE-3.2.0/dist/js/adminlte.min.js' %}"></script>#}
     <!-- ./AdminLTE3 -->
     <!-- Fontawesome -->
     {#    <script src="https://kit.fontawesome.com/606bbbad74.js" crossorigin="anonymous"></script>#}
@@ -48,6 +48,14 @@
     <link rel="stylesheet" href="{% static 'librery/jquery-confirm-v3.3.4/jquery-confirm.min.css' %}">
     <script src="{% static 'librery/jquery-confirm-v3.3.4/jquery-confirm.min.js' %}"></script>
     <!-- Jquery-Confirm (Alert) -->
+    <!-- AdminLTE3 -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="{% static 'librery/AdminLTE-3.2.0/plugins/fontawesome-free/css/all.min.css' %}s">
+    <link rel="stylesheet"
+          href="{% static 'librery/AdminLTE-3.2.0/plugins/icheck-bootstrap/icheck-bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'librery/AdminLTE-3.2.0/dist/css/adminlte.min.css' %}">
+    <!-- ./AdminLTE3 -->
     <!-- My CSS & Functions -->
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <script src="{% static 'js/functions.js' %}"></script>
@@ -59,10 +67,17 @@
     <!-- ./Extra Head -->
 </head>
 
+<body class="hold-transition login-page">
 <!-- Body -->
 {% block body %}
 
 {% endblock %}
+<!-- AdminLTE3 -->
+<script src="{% static 'librery/AdminLTE-3.2.0/plugins/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'librery/AdminLTE-3.2.0/plugins/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'librery/AdminLTE-3.2.0/dist/js/adminlte.min.js' %}"></script>
+<!-- ./AdminLTE3 -->
+</body>
 <!-- ./Body -->
 
 </html>
