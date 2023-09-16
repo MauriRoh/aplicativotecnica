@@ -1,6 +1,7 @@
 :root {
     /* ESTRUCTURAS */
-    --violetMC:#70326f;
+    --violetMC01:#70326f;
+    --violetMC02: #5e215d;
     --blue01:#5BC0F8;
     --blue02:#0081C9;
     --blue03:#2C74B3;
@@ -44,18 +45,18 @@
 /* SIDEBAR
 */
 .main-sidebar {
-    background-color: var(--violetMC) !important;
+    background-color: var(--violetMC01) !important;
 }
 /* CARD ONLINE - LINEA SOBRE LAS CARDS
  */
 .card-color{
-    background-color: var(--violetMC) !important;
+    background-color: var(--violetMC01) !important;
     color: var(--white01);
 }
 /* COLORES ICONOS CONTENT HEADER
 */
 .color-icons{
-    color: var(--violetMC) !important;
+    color: var(--violetMC01) !important;
 }
 /* BOTONES + y - DataTable
 */
