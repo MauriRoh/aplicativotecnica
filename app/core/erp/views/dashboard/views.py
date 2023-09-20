@@ -6,7 +6,7 @@ from django.urls import reverse_lazy
 from django.shortcuts import render
 
 
-class DashboardView(TemplateView):
+class DashboardView(LoginRequiredMixin, TemplateView):
     template_name = 'dashboard.html'
 
     # @method_decorator(csrf_exempt)

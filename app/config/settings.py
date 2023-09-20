@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'widget_tweaks',
     # My APPs
     'core.login',
+    'core.user',
     'core.homepage',
     'core.erp'
 ]
@@ -133,8 +134,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-# STATIC FILDS
+# STATIC FILES
 STATIC_URL = '/static/'
+
+# Archivos estáticos para PDF
+STATIC_ROOT  = os.path.join(BASE_DIR, 'staticfiles/')
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
@@ -151,4 +155,7 @@ LOGIN_URL = '/login/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 MEDIA_URL = '/media/'
+
+# USERS
+AUTH_USER_MODEL = 'user.User'
 

@@ -8,6 +8,7 @@ urlpatterns = [
     # PADRON
     # path('list/', prueba),
     path('producto/list/', ProductoListView.as_view(), name='producto_list'),
+    path('producto/create/', ProductoCreateView.as_view(), name='producto_create'),
 
 # PANEL DASHBOARD
     path('dashboard/', DashboardView.as_view(), name='dashboard'),

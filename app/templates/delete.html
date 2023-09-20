@@ -50,10 +50,10 @@
         $('form').on('submit', function (e) {
             e.preventDefault();
             let parameters = new FormData(this);
-            alert_confirm(window.location.pathname, parameters, 'Notificación', '¿Estas seguro de eliminar el siguiente Registro?', function () {
+            alert_confirm(window.location.pathname, parameters, 'Notificación', '¿Estas seguro de Eliminar el siguiente Registro?', function () {
                 Swal.fire({
                     title: 'Alerta',
-                    text: 'Registro eliminado con Éxito',
+                    text: 'Registro Eliminado con Éxito',
                     icon: 'success',
                     timer: 2000,
                     onClose: () => {
