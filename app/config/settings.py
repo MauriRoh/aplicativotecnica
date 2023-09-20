@@ -47,7 +47,10 @@ INSTALLED_APPS = [
     'widget_tweaks',
     # My APPs
     'core.login',
+<<<<<<< HEAD
     'core.user',
+=======
+>>>>>>> 4a1072f9275fe6614ea2334a2d772d86181835c3
     'core.homepage',
     'core.erp'
 ]
@@ -155,7 +158,10 @@ LOGIN_URL = '/login/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 MEDIA_URL = '/media/'
+<<<<<<< HEAD
 
 # USERS
 AUTH_USER_MODEL = 'user.User'
+=======
+>>>>>>> 4a1072f9275fe6614ea2334a2d772d86181835c3
 
