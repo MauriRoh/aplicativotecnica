@@ -64,42 +64,5 @@
         </li>
 
     </ul>
-    <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
-
-            <li class="nav-item dropdown">
-                <a class="nav-link" data-toggle="dropdown" href="#">
-                    <i class="fa-solid fa-user-gear"></i> {{ request.user.username }}
-                </a>
-                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                        <span class="dropdown-header" style="font-size: 12px;">
-                            Su último acceso fue {{ request.user.last_login }}
-                        </span>
-                    <div class="dropdown-divider"></div>
-                    <a href="#" class="dropdown-item">
-                        <i class="fa-solid fa-user-pen mr-2"></i> Editar Perfil
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a href="#" class="dropdown-item">
-                        <i class="fa-solid fa-user-lock mr-2"></i> Cambiar Password
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a href="#" class="dropdown-item dropdown-footer">
-                        <p>El sistema está preparado para realizar diferentes acciones</p>
-                    </a>
-                </div>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'access:logout' %}">
-                    <i class="fa-solid fa-right-from-bracket" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-widget="fullscreen" href="#" role="button">
-                    <i class="fas fa-expand-arrows-alt"></i>
-                </a>
-            </li>
-
-        </ul>
 </nav>
 <!-- /.navbar -->

@@ -18,39 +18,23 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
-<<<<<<< HEAD
 from core.homepage.views import IndexView
 from core.login.views import *
 from django.conf.urls import handler400
 from core.erp.views.dashboard.views import page_not_found404
-=======
-from django.conf.urls.static import static
-
-from core.homepage.views import IndexView
-from core.login.views import *
->>>>>>> 4a1072f9275fe6614ea2334a2d772d86181835c3
 
 
 urlpatterns = [
     path('', IndexView.as_view(), name='index'),
     path('admin/', admin.site.urls),
     path('login/', include('core.login.urls')),
-<<<<<<< HEAD
     path('user/', include('core.user.urls')),
-=======
->>>>>>> 4a1072f9275fe6614ea2334a2d772d86181835c3
     path('erp/', include('core.erp.urls')),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-# handler404 = page_not_found404
+handler404 = page_not_found404
 
-<<<<<<< HEAD
-# if settings.DEBUG:
-#     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-#     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-=======
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
->>>>>>> 4a1072f9275fe6614ea2334a2d772d86181835c3
