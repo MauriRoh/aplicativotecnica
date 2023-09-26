@@ -16,6 +16,7 @@ class ProductoListView(LoginRequiredMixin, ValidatePermissionRequiredMixin, List
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = 'Listado de Productos'
+        context['create_url'] = reverse_lazy('app:producto_create')
         return context
 
 class ProductoCreateView(LoginRequiredMixin, ValidatePermissionRequiredMixin, CreateView):
@@ -29,5 +30,5 @@ class ProductoCreateView(LoginRequiredMixin, ValidatePermissionRequiredMixin, Cr
         context = super().get_context_data(**kwargs)
         context['title'] = 'Crear Nuevo Producto'
         context['list_url'] = reverse_lazy('app:producto_list')
-        context['create_url'] = reverse_lazy('app:producto_create')
+        context['action'] = 'add'
         return context
