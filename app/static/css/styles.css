@@ -1,7 +1,8 @@
 :root {
     /* ESTRUCTURAS */
     --violetMC01: #70326f;
-    --violetMC02: #5e215d;
+    --violetMC02: #863d85;
+    /*--violetMC02: #8f3f8e;*/
     --blue01: #5BC0F8;
     --blue02: #0081C9;
     --blue03: #2C74B3;
@@ -50,6 +51,11 @@
     background-color: var(--violetMC01) !important;
 }
 
+.navbarColor {
+    background-color: var(--violetMC02) !important;
+    color: var(--white01);
+}
+
 /* CARD ONLINE - LINEA SOBRE LAS CARDS
  */
 .card-color {
@@ -94,9 +100,9 @@ tr.shown td.details-control {
     align-items: center; /* Centrar verticalmente */
 }
 
-/*.hero-img img {*/
-/*    vertical-align: middle;*/
-/*}*/
+.userColor {
+    color: var(--violetMC01);
+}
 
 @media (max-width: 2500px) {
     .hero-img {
@@ -121,15 +127,3 @@ tr.shown td.details-control {
         width: 80%;
     }
 }
-
-/*.container{*/
-/*    background-color: var(--grey01);*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    !*border: 0;*!*/
-/*    !*background-image:url("/static/image/img-dashboard.jpg");*!*/
-/*    !*background-position: center center;*!*/
-/*    !*background-repeat: no-repeat;*!*/
-/*    !*background-size: cover;*!*/
-/*    !*height: 750px;*!*/
-/*}*/

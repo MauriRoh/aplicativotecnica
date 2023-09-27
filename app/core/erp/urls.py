@@ -9,8 +9,9 @@ urlpatterns = [
     # path('list/', prueba),
     path('producto/list/', ProductoListView.as_view(), name='producto_list'),
     path('producto/create/', ProductoCreateView.as_view(), name='producto_create'),
+    path('producto/update/<int:pk>/', ProductoUpdateView.as_view(), name='producto_update'),
 
-# PANEL DASHBOARD
+    # PANEL DASHBOARD
     path('dashboard/', DashboardView.as_view(), name='dashboard'),
 
 ]

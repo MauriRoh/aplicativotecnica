@@ -1,7 +1,8 @@
 :root {
     /* ESTRUCTURAS */
     --violetMC01: #70326f;
-    --violetMC02: #5e215d;
+    --violetMC02: #863d85;
+    /*--violetMC02: #8f3f8e;*/
     --blue01: #5BC0F8;
     --blue02: #0081C9;
     --blue03: #2C74B3;
@@ -243,7 +244,7 @@ h6 {
 .navbar .getstarted:focus:hover {
     color: var(--white01);
     /*color: #fff;*/
-    background: var(--blue02);
+    background: var(--blue11);
     /*background: #31a9e1;*/
 }
 
@@ -468,13 +469,13 @@ h6 {
     transition: 0.5s;
     margin: 10px 0 0 0;
     color: #fff;
-    background: var(--blue00);
+    background: var(--blue02);
     /*background: #90448f;*/
     /*background: #47b2e4;*/
 }
 
 #hero .btn-get-started:hover {
-    background: var(--blue02);
+    background: var(--blue11);
     /*background: #209dd8;*/
 }
 

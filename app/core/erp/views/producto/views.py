@@ -32,3 +32,18 @@ class ProductoCreateView(LoginRequiredMixin, ValidatePermissionRequiredMixin, Cr
         context['list_url'] = reverse_lazy('app:producto_list')
         context['action'] = 'add'
         return context
+
+
+class ProductoUpdateView(LoginRequiredMixin, ValidatePermissionRequiredMixin, UpdateView):
+    model = Producto
+    form_class = ProductoForm
+    template_name = 'producto/update.html'
+    success_url = reverse_lazy('app:producto_list')
+    permission_required = 'erp.add_producto'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['title'] = 'Crear Nuevo Producto'
+        context['list_url'] = reverse_lazy('app:producto_list')
+        context['action'] = 'add'
+        return context
